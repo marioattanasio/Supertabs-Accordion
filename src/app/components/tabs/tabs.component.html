@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border" no-border>
+  <ion-toolbar color="primary" mode="ios">
+    <ion-title color="tertiary">
+      Super Tabs
+    </ion-title>
+    <preferences slot="end"></preferences>
+  </ion-toolbar>
+</ion-header>
+
+<super-tabs>
+  <super-tabs-toolbar slot="top" >
+    <super-tab-button>
+      <ion-label>UOMO</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>DONNA</ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container autoScrollTop>
+    <super-tab>
+      <ion-nav [root]="uomoPage"></ion-nav>
+    </super-tab>
+    <super-tab>
+      <ion-nav [root]="donnaPage"></ion-nav>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>
