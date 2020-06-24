@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService} from 'src/app/components/services/service.service';
 
 @Component({
   selector: 'app-donna',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./donna.page.scss'],
 })
 export class DonnaPage implements OnInit {
+  index: number;
 
-  constructor() { }
+  constructor(private service: ServiceService) {
+
+   
+    
+   }
 
   ngOnInit() {
+    this.index=2;
+    
+  
   }
 
 }

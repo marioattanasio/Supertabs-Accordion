@@ -10,6 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+ 
+  {
+    path: 'detail',
+    loadChildren: () => import('./components/pages/detail/detail.module').then( m => m.DetailPageModule)
   }
 ];
 
